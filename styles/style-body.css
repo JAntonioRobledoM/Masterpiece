@@ -3,3 +3,49 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.container {
+    max-width: 1200px; /* Limitar el ancho máximo */
+}
+
+img {
+    max-height: 300px; /* Ajustar el tamaño de la imagen */
+    object-fit: cover; /* Asegurarse de que la imagen mantenga proporción */
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif; /* Fuente elegante */
+    color: #001f3f; /* Color oscuro */
+    font-size: 2rem;
+}
+
+p {
+    font-family: 'Cormorant Garamond', serif; /* Fuente para el texto */
+    font-size: 1.2rem;
+    color: #333; /* Gris oscuro */
+}
+
+.artwork {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.artwork img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.filter {
+    background-color: #f8c469;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.form-select {
+    font-family: 'Cormorant Garamond', serif;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASTERPIECE | INICIO</title>
+    <link rel="icon" type="image/x-icon" href="../img/icon.ico">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../styles/style-body.css">
+    <link rel="stylesheet" href="../styles/style-nav.css">
+    <link rel="stylesheet" href="../styles/style-footer.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../img/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coleccion.html">COLECCIÓN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="asistencia.html">ASISTENCIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <!-- Sección de Obras (Izquierda) -->
+            <div class="col-md-8">
+                <div id="artworks">
+                    <!-- Obras filtradas aparecerán aquí -->
+                    <div class="artwork" data-museum="Louvre" data-artist="Leonardo da Vinci">
+                        <img src="../img/monalisa.webp" alt="La Mona Lisa" class="img-fluid rounded">
+                        <h3 class="mt-3">La Mona Lisa - Leonardo da Vinci</h3>
+                        <p>Pintada entre 1503 y 1519, famosa por su enigmática sonrisa. Se encuentra en el Museo del Louvre, París.</p>
+                    </div>
+                    <div class="artwork" data-museum="Reina Sofia" data-artist="Pablo Picasso">
+                        <img src="../img/guernica.jpg" alt="Guernica" class="img-fluid rounded">
+                        <h3 class="mt-3">Guernica - Pablo Picasso</h3>
+                        <p>Obra que representa los horrores de la Guerra Civil Española, expuesta en el Museo Reina Sofía, Madrid.</p>
+                    </div>
+                    <div class="artwork" data-museum="Munch Museum" data-artist="Edvard Munch">
+                        <img src="../img/grito.jpg" alt="El Grito" class="img-fluid rounded">
+                        <h3 class="mt-3">El Grito - Edvard Munch</h3>
+                        <p>Expresión de angustia y ansiedad moderna, expuesta en el Museo Munch de Noruega.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Filtros (Derecha) -->
+            <div class="col-md-4">
+                <h2>Filtrar por:</h2>
+                <div class="filter">
+                    <h4>Museo</h4>
+                    <select id="museumFilter" class="form-select">
+                        <option value="all">Todos</option>
+                        <option value="Louvre">Louvre</option>
+                        <option value="Reina Sofia">Reina Sofía</option>
+                        <option value="Munch Museum">Munch Museum</option>
+                    </select>
+                </div>
+                <div class="filter mt-3">
+                    <h4>Artista</h4>
+                    <select id="artistFilter" class="form-select">
+                        <option value="all">Todos</option>
+                        <option value="Leonardo da Vinci">Leonardo da Vinci</option>
+                        <option value="Pablo Picasso">Pablo Picasso</option>
+                        <option value="Edvard Munch">Edvard Munch</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer class="footer-custom">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-12 col-md-6 my-2">
+                    <h5>Redes Sociales</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="footer-link">Facebook</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="footer-link">Twitter</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="footer-link">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 my-2">
+                    <h5>Contacto</h5>
+                    <p>Email: email.ejemplo@gmail.com</p>
+                    <p>Teléfono: 123456789</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="../scripts/search.js"></script>
+</body>
+
+</html>

@@ -1,14 +1,24 @@
 .navbar-custom {
     background-color: #001f3f; /* Color azul oscuro */
 }
+
 .navbar-custom .navbar-brand img {
     height: 100px; /* Ajusta el tamaño del logo */
 }
+
+.navbar-custom .navbar-nav {
+    display: flex;
+    justify-content: space-between; /* Distribuye uniformemente los enlaces */
+    width: 50%; /* Ajusta el espacio ocupado por las opciones */
+}
+
 .navbar-custom .nav-link {
     color: #ffffff;
     font-family: 'Cormorant Garamond', serif; /* Fuente elegante */
     font-size: 1.2rem;
+    text-align: center; /* Asegura el centrado del texto */
 }
+
 .navbar-custom .nav-link:hover {
     color: #f8c469; /* Color dorado al pasar el mouse */
 }

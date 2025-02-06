@@ -1,0 +1,33 @@
+.footer-custom {
+    background-color: #001f3f; /* Fondo azul oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 1.5rem 0; /* Espaciado interno */
+}
+
+.footer-custom h5 {
+    font-family: 'Cormorant Garamond', serif; /* Fuente elegante */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-custom p, .footer-custom .footer-link {
+    font-family: 'Cormorant Garamond', serif; /* Fuente elegante */
+    font-size: 1rem;
+    margin: 0;
+}
+
+.footer-custom .footer-link {
+    color: #ffffff; /* Color blanco para enlaces */
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-custom .footer-link:hover {
+    color: #f8c469; /* Color dorado al pasar el mouse */
+}
+
+.footer-custom .list-inline {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
