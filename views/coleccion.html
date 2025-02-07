@@ -21,7 +21,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../index.html">
                 <img src="../img/logo.png" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -58,19 +58,64 @@
                         <h3 class="mt-3">La Mona Lisa - Leonardo da Vinci</h3>
                         <p>Pintada entre 1503 y 1519, famosa por su enigmática sonrisa. Se encuentra en el Museo del Louvre, París.</p>
                     </div>
+                    <div class="artwork" data-museum="Louvre" data-artist="Eugène Delacroix">
+                        <img src="../img/elpueblo.webp" alt="La Libertad Guiando al Pueblo" class="img-fluid rounded">
+                        <h3 class="mt-3">La Libertad Guiando al Pueblo - Eugène Delacroix</h3>
+                        <p>Pintada en 1830, simboliza la revolución francesa y se encuentra en el Museo del Louvre, París.</p>
+                    </div>
+                    <div class="artwork" data-museum="Louvre" data-artist="Jacques-Louis David">
+                        <img src="../img/napoleon.webp" alt="Napoleón Cruzando los Alpes" class="img-fluid rounded">
+                        <h3 class="mt-3">Napoleón Cruzando los Alpes - Jacques-Louis David</h3>
+                        <p>Pintada en 1801, representa la épica travesía de Napoleón. Se encuentra en el Museo del Louvre, París.</p>
+                    </div>
+                    <div class="artwork" data-museum="Louvre" data-artist="Jean-Auguste-Dominique Ingres">
+                        <img src="../img/odalisca.jpg" alt="La Gran Odalisca" class="img-fluid rounded">
+                        <h3 class="mt-3">La Gran Odalisca - Jean-Auguste-Dominique Ingres</h3>
+                        <p>Pintada en 1814, una obra maestra del neoclasicismo. Exhibida en el Museo del Louvre, París.</p>
+                    </div>
                     <div class="artwork" data-museum="Reina Sofia" data-artist="Pablo Picasso">
                         <img src="../img/guernica.jpg" alt="Guernica" class="img-fluid rounded">
                         <h3 class="mt-3">Guernica - Pablo Picasso</h3>
                         <p>Obra que representa los horrores de la Guerra Civil Española, expuesta en el Museo Reina Sofía, Madrid.</p>
+                    </div>
+                    <div class="artwork" data-museum="Reina Sofia" data-artist="Salvador Dalí">
+                        <img src="../img/memoria.jpg" alt="La Persistencia de la Memoria" class="img-fluid rounded">
+                        <h3 class="mt-3">La Persistencia de la Memoria - Salvador Dalí</h3>
+                        <p>Pintada en 1931, famosa por sus relojes derretidos. Se encuentra en el Museo Reina Sofía, Madrid.</p>
+                    </div>
+                    <div class="artwork" data-museum="Reina Sofia" data-artist="Joan Miró">
+                        <img src="../img/azul2.jpg" alt="Azul II" class="img-fluid rounded">
+                        <h3 class="mt-3">Azul II - Joan Miró</h3>
+                        <p>Pintura abstracta de 1961, exhibida en el Museo Reina Sofía, Madrid.</p>
+                    </div>
+                    <div class="artwork" data-museum="Reina Sofia" data-artist="Juan Gris">
+                        <img src="../img/mantel.jpg" alt="Bodegón con mantel a cuadros" class="img-fluid rounded">
+                        <h3 class="mt-3">Bodegón con mantel a cuadros - Juan Gris</h3>
+                        <p>Una de las obras más reconocidas del cubismo, expuesta en el Museo Reina Sofía, Madrid.</p>
                     </div>
                     <div class="artwork" data-museum="Munch Museum" data-artist="Edvard Munch">
                         <img src="../img/grito.jpg" alt="El Grito" class="img-fluid rounded">
                         <h3 class="mt-3">El Grito - Edvard Munch</h3>
                         <p>Expresión de angustia y ansiedad moderna, expuesta en el Museo Munch de Noruega.</p>
                     </div>
+                    <div class="artwork" data-museum="Munch Museum" data-artist="Edvard Munch">
+                        <img src="../img/maddona.jpg" alt="Madonna" class="img-fluid rounded">
+                        <h3 class="mt-3">Madonna - Edvard Munch</h3>
+                        <p>Pintura que representa una visión mística del amor y la muerte, expuesta en el Museo Munch, Noruega.</p>
+                    </div>
+                    <div class="artwork" data-museum="MoMA" data-artist="Vincent van Gogh">
+                        <img src="../img/starry_night.jpg" alt="La Noche Estrellada" class="img-fluid rounded">
+                        <h3 class="mt-3">La Noche Estrellada - Vincent van Gogh</h3>
+                        <p>Pintada en 1889, esta obra maestra del posimpresionismo muestra un cielo turbulento sobre un tranquilo pueblo. Se encuentra en el MoMA, Nueva York.</p>
+                    </div>
+                    <div class="artwork" data-museum="MoMA" data-artist="Claude Monet">
+                        <img src="../img/nenufares.jpg" alt="Los Nenúfares" class="img-fluid rounded">
+                        <h3 class="mt-3">Los Nenúfares - Claude Monet</h3>
+                        <p>Serie de pinturas impresionistas que capturan la belleza de la luz y el agua, expuestas en el MoMA, Nueva York.</p>
+                    </div>
                 </div>
             </div>
-    
+            
             <!-- Filtros (Derecha) -->
             <div class="col-md-4">
                 <h2>Filtrar por:</h2>
@@ -81,6 +126,7 @@
                         <option value="Louvre">Louvre</option>
                         <option value="Reina Sofia">Reina Sofía</option>
                         <option value="Munch Museum">Munch Museum</option>
+                        <option value="MoMA">MoMA</option>
                     </select>
                 </div>
                 <div class="filter mt-3">
@@ -88,14 +134,22 @@
                     <select id="artistFilter" class="form-select">
                         <option value="all">Todos</option>
                         <option value="Leonardo da Vinci">Leonardo da Vinci</option>
+                        <option value="Eugène Delacroix">Eugène Delacroix</option>
+                        <option value="Jacques-Louis David">Jacques-Louis David</option>
+                        <option value="Jean-Auguste-Dominique Ingres">Jean-Auguste-Dominique Ingres</option>
                         <option value="Pablo Picasso">Pablo Picasso</option>
+                        <option value="Salvador Dalí">Salvador Dalí</option>
+                        <option value="Joan Miró">Joan Miró</option>
+                        <option value="Juan Gris">Juan Gris</option>
                         <option value="Edvard Munch">Edvard Munch</option>
+                        <option value="Vincent van Gogh">Vincent van Gogh</option>
+                        <option value="Claude Monet">Claude Monet</option>
                     </select>
                 </div>
             </div>
         </div>
     </div>
-    
+
 
     <footer class="footer-custom">
         <div class="container-fluid">
@@ -104,13 +158,13 @@
                     <h5>Redes Sociales</h5>
                     <ul class="list-inline">
                         <li class="list-inline-item">
-                            <a href="#" class="footer-link">Facebook</a>
+                            <a href="https://www.facebook.com/?locale=es_ES" class="footer-link">Facebook</a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="#" class="footer-link">Twitter</a>
+                            <a href="https://x.com/?lang=es" class="footer-link">Twitter</a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="#" class="footer-link">Instagram</a>
+                            <a href="https://x.com/?lang=es" class="footer-link">Instagram</a>
                         </li>
                     </ul>
                 </div>

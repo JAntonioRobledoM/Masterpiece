@@ -49,3 +49,14 @@ h1, h2, h3 {
 .form-select {
     font-family: 'Cormorant Garamond', serif;
 }
+
+.btn-primary {
+    background-color: #001f3f !important; /* Azul del nav */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #f8c469 !important; /* Color dorado al pasar el mouse */
+    color: #001f3f !important;
+}
+
