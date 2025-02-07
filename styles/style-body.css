@@ -41,9 +41,10 @@ h1, h2, h3 {
 }
 
 .filter {
-    background-color: #f8c469;
+    background-color: #001f3f;
     padding: 15px;
     border-radius: 5px;
+    color: aliceblue;
 }
 
 .form-select {
@@ -60,3 +61,23 @@ h1, h2, h3 {
     color: #001f3f !important;
 }
 
+.collection-title {
+    background-color: #001f3f; /* Mismo color que el navbar */
+    color: #ffffff; /* Texto blanco */
+    padding: 0.5rem 2rem; /* Espaciado reducido */
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    margin: 0 auto 2rem; /* Centrado horizontal y margen inferior */
+    max-width: fit-content; /* Ajusta el ancho al contenido */
+}
+
+.collection-section p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+}
+
+.collection-section img {
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+}
