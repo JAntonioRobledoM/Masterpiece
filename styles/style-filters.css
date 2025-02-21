@@ -1,0 +1,40 @@
+.navbar-custom {
+    background-color: #001f3f;
+}
+
+.navbar-custom .navbar-brand img {
+    height: 100px;
+}
+
+.navbar-custom .navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.navbar-custom .nav-link {
+    color: #ffffff;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #f8c469;
+}
+
+.navbar-filter {
+    background-color: #001f3f;
+    padding: 1rem;
+}
+
+.navbar-filter .form-control,
+.navbar-filter .form-select {
+    width: auto;
+}
+
+.navbar-filter select,
+.navbar-filter input {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+}
