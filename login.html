@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Masterpiece</title>
+    <link rel="stylesheet" href="styles/style-user.css">
+    <link rel="stylesheet" href="styles/style-body.css">
+    <link rel="stylesheet" href="styles/style-nav.css">
+    <link rel="stylesheet" href="styles/style-footer.css">
+</head>
+<body>
+    <header>
+        <h1>Iniciar sesión</h1>
+    </header>
+    <main>
+        <form id="login-form">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required class="form-control">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required class="form-control">
+            <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button>
+        </form>
+        
+        <!-- Script para gestionar el login -->
+        <script>
+            const predefinedUser = {
+                username: 'user',
+                password: '1234'
+            };
+        
+            document.getElementById('login-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+        
+                if (username === predefinedUser.username && password === predefinedUser.password) {
+                    sessionStorage.setItem('userLoggedIn', true);
+                    window.location.href = 'views/user/panel.html';  // Redirigir al panel de usuario
+                } else {
+                    alert('Usuario o contraseña incorrectos');
+                }
+            });
+        </script>
+    </main>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>

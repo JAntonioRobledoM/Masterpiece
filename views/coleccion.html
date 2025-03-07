@@ -44,8 +44,24 @@
                     </li>
                 </ul>
             </div>
+            <!-- Botones de panel y sesión a la derecha -->
+            <div class="d-flex">
+                <!-- Panel de Usuario -->
+                <a class="btn btn-outline-primary" href="user/panel.html" role="button">Panel de Usuario</a>
+                <!-- Condicional para el botón de iniciar/cerrar sesión -->
+                <a class="btn btn-outline-primary ms-2" id="login-btn" href="login.html" role="button">Iniciar sesión</a>
+            </div>
         </div>
     </nav>
+    
+    <script>
+        // Verificar si la sesión está activa para cambiar el texto del botón
+        if (sessionStorage.getItem('userLoggedIn')) {
+            document.getElementById('login-btn').textContent = 'Cerrar sesión';
+            document.getElementById('login-btn').href = '../logout.html';  // Redirigir al logout
+        }
+    </script>
+    
 
     <!-- Barra de Búsqueda y Filtros -->
     <nav class="navbar navbar-filter navbar-light">

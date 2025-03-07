@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MASTERPIECE | INICIO</title>
-    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+    <link rel="icon" type="image/x-icon" href="../../img/icon.ico">
     <!-- Estilos -->
-    <link rel="stylesheet" href="styles/style-body.css">
-    <link rel="stylesheet" href="styles/style-nav.css">
-    <link rel="stylesheet" href="styles/style-footer.css">
+    <link rel="stylesheet" href="../../styles/style-body.css">
+    <link rel="stylesheet" href="../../styles/style-nav.css">
+    <link rel="stylesheet" href="../../styles/style-footer.css">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" alt="Logo">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../../img/logo.png" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,84 +31,81 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">INICIO</a>
+                        <a class="nav-link" href="../../index.html">INICIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="views/coleccion.html">COLECCIÓN</a>
+                        <a class="nav-link" href="../coleccion.html">COLECCIÓN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="views/asistencia.html">ASISTENCIA</a>
+                        <a class="nav-link" href="../asistencia.html">ASISTENCIA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="views/contacto.html">CONTACTO</a>
+                        <a class="nav-link" href="../contacto.html">CONTACTO</a>
                     </li>
                 </ul>
             </div>
             <!-- Botones de panel y sesión a la derecha -->
             <div class="d-flex">
                 <!-- Panel de Usuario -->
-                <a class="btn btn-outline-primary" href="views/user/panel.html" role="button">Panel de Usuario</a>
+                <a class="btn btn-outline-primary" href="" role="button">Panel de Usuario</a>
                 <!-- Condicional para el botón de iniciar/cerrar sesión -->
-                <a class="btn btn-outline-primary ms-2" id="login-btn" href="login.html" role="button">Iniciar sesión</a>
+                <a class="btn btn-outline-primary ms-2" id="login-btn" href="../../login.html" role="button">Iniciar
+                    sesión</a>
             </div>
         </div>
     </nav>
-    
+
     <script>
         // Verificar si la sesión está activa para cambiar el texto del botón
         if (sessionStorage.getItem('userLoggedIn')) {
             document.getElementById('login-btn').textContent = 'Cerrar sesión';
-            document.getElementById('login-btn').href = 'logout.html';  // Redirigir al logout
+            document.getElementById('login-btn').href = '../../logout.html';  // Redirigir al logout
         }
     </script>
-    
 
+    <!-- Panel de Usuario -->
     <div class="container my-5">
-        <div class="row align-items-center">
-            <!-- Imagen a la izquierda -->
-            <div class="col-md-6 text-center text-md-start">
-                <img src="img/starry_night.jpg" alt="La Noche Estrellada" class="img-fluid rounded">
+        <h2>Bienvenido, <span id="username">Usuario</span></h2>
+        <p><strong>Email:</strong> <span id="user-email">usuario@ejemplo.com</span></p>
+        <p><strong>Miembros desde:</strong> <span id="user-since">Enero 2023</span></p>
+
+        <div class="row mt-5">
+            <!-- Categorías -->
+            <div class="col-md-4 text-center">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Creaci%C3%B3n_de_Ad%C3%A1n.jpg/640px-Creaci%C3%B3n_de_Ad%C3%A1n.jpg" class="card-img-top" alt="Arte Clásico">
+                    <div class="card-body">
+                        <h5 class="card-title">Arte Clásico</h5>
+                        <p class="card-text">Explora las obras clásicas de la historia del arte.</p>
+                        <a href="../coleccion.html#arte-clasico" class="btn btn-primary">Ver Colección</a>
+                    </div>
+                </div>
             </div>
-            <!-- Texto y título a la derecha -->
-            <div class="col-md-6 text-center text-md-start">
-                <h2 class="mb-3">Starry Night - Vicent Van Gogh</h2>
-                <p>
-                    Created in 1889 while he was in an asylum in France. It depicts a swirling night sky over a village,
-                    showcasing Van Gogh’s bold brushstrokes and vibrant colors. The painting is now displayed at the
-                    Museum of Modern Art (MoMA) in New York. <br><br>
-                    Más información
-                </p>
+
+            <div class="col-md-4 text-center">
+                <div class="card">
+                    <img src="https://winegogh.es/wp-content/uploads/2023/05/orig_64571-1024x640.jpg.webp" class="card-img-top" alt="Arte Moderno">
+                    <div class="card-body">
+                        <h5 class="card-title">Arte Moderno</h5>
+                        <p class="card-text">Sumérgete en las innovadoras obras del arte moderno.</p>
+                        <a href="../coleccion.html#arte-moderno" class="btn btn-primary">Ver Colección</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <div class="card">
+                    <img src="https://imagenes.elpais.com/resizer/v2/OX2YWS6X27YNQWOF6SBWF2CGCU.jpg?auth=963078ca68fd0a0c6a013fb0e8b4fa52328fe6bb54eac30669ac1a9a3bd75003&width=1960" class="card-img-top" alt="Arte Contemporáneo">
+                    <div class="card-body">
+                        <h5 class="card-title">Arte Contemporáneo</h5>
+                        <p class="card-text">Descubre las creaciones de los artistas contemporáneos.</p>
+                        <a href="../coleccion.html#arte-contemporaneo" class="btn btn-primary">Ver Colección</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Sección de Colección de Hoy -->
-    <div class="container my-5 collection-section">
-        <div class="collection-title">Colección de Hoy</div>
-        <div class="row">
-            <!-- Cuadro 1 -->
-            <div class="col-md-4 text-center">
-                <img src="img/monalisa.webp" alt="La Mona Lisa" class="img-fluid rounded">
-                <h3 class="mt-3">La Mona Lisa - Leonardo da Vinci</h3>
-                <p>Esta obra maestra renacentista fue pintada entre 1503 y 1519. Conocida por su enigmática sonrisa,
-                    la Mona Lisa es exhibida en el Museo del Louvre en París.</p>
-            </div>
-            <!-- Cuadro 2 -->
-            <div class="col-md-4 text-center">
-                <img src="img/guernica.jpg" alt="Guernica" class="img-fluid rounded">
-                <h3 class="mt-3">Guernica - Pablo Picasso</h3>
-                <p>Creada en 1937, esta obra representa el horror de la Guerra Civil Española. Su estilo cubista
-                    y dramáticos contrastes la convierten en una de las piezas más impactantes del siglo XX.</p>
-            </div>
-            <!-- Cuadro 3 -->
-            <div class="col-md-4 text-center">
-                <img src="img/grito.jpg" alt="El Grito" class="img-fluid rounded">
-                <h3 class="mt-3">El Grito - Edvard Munch</h3>
-                <p>Pintado en 1893, esta obra simboliza la ansiedad y el estrés de la modernidad. Se encuentra
-                    en la Galería Nacional de Noruega y en el Museo Munch.</p>
-            </div>
-        </div>
-    </div>
 
     <footer class="footer-custom">
         <div class="container-fluid">

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerrar Sesión - Masterpiece</title>
+</head>
+
+<body>
+    <h2>Has cerrado sesión con éxito</h2>
+    <p>Esperamos verte pronto nuevamente.</p>
+    <script>
+        // Eliminar la sesión cuando el usuario cierra sesión
+        sessionStorage.removeItem('userLoggedIn');
+        window.location.href = 'index.html'; // Redirigir al inicio
+    </script>
+</body>
+
+</html>
