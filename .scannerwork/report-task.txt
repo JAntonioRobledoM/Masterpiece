@@ -2,5 +2,5 @@ projectKey=Masterpiece
 serverUrl=http://localhost:9000
 serverVersion=25.2.0.102705
 dashboardUrl=http://localhost:9000/dashboard?id=Masterpiece
-ceTaskId=2d9b25f5-328f-444e-8fbc-03738682927f
-ceTaskUrl=http://localhost:9000/api/ce/task?id=2d9b25f5-328f-444e-8fbc-03738682927f
+ceTaskId=2e1c834b-81d7-49dd-a2df-6c67352c71cf
+ceTaskUrl=http://localhost:9000/api/ce/task?id=2e1c834b-81d7-49dd-a2df-6c67352c71cf
